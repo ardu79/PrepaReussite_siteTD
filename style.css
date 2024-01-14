@@ -1,0 +1,203 @@
+/* Ajout de styles pour la section principale sur les écrans plus petits */
+@media only screen and (max-width: 600px) {
+    #main-content {
+        padding: 0 10px;
+    }
+}
+
+/* Ajout de styles pour le menu de navigation sur les écrans plus petits */
+@media only screen and (max-width: 768px) {
+    nav {
+        text-align: center;
+    }
+
+    ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+/* Reset de la marge et du rembourrage pour assurer une consistance sur tous les navigateurs */
+body, h1, h2, ul, li, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+/* Styles pour l'en-tête */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+/* Styles pour le menu de navigation */
+nav {
+    margin-top: 10px;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: inline;
+    margin-right: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ffcc00; /* Change la couleur au survol */
+}
+
+/* Styles pour le contenu principal */
+section {
+    margin: 20px;
+}
+
+/* Styles pour le pied de page */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Ajoutez d'autres styles au besoin */
+/* Styles pour la section principale */
+#main-content {
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+}
+/* Styles pour la section des fonctionnalités */
+#features {
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.feature {
+    margin-bottom: 30px;
+}
+
+.feature img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.feature h3 {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.6;
+}
+/* Styles pour la section des derniers TD */
+#latest-td {
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.td-preview {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.td-preview h3 {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.td-preview p {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.td-preview a {
+    display: inline-block;
+    background-color: #ffcc00;
+    color: #333;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.td-preview a:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.view-all-link {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 16px;
+}
+body {
+    margin-bottom: 80px; /* Ajoutez une marge basse égale à la hauteur du footer */
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+/* ... Autres styles ... */
+
+/* Styles pour le pied de page */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

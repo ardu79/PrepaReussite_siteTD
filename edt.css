@@ -1,0 +1,96 @@
+/* Reset de la marge et du rembourrage pour assurer une consistance sur tous les navigateurs */
+body, h1, h2, ul, li, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+/* Styles pour l'en-tête */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+/* Styles pour le menu de navigation */
+nav {
+    margin-top: 10px;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: inline;
+    margin-right: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ffcc00; /* Change la couleur au survol */
+}
+
+/* Style pour l'emploi du temps */
+#emploi-du-temps {
+    max-width: 800px;
+    margin: 20px auto; /* Ajoute une marge autour de l'emploi du temps */
+}
+
+/* Style pour chaque entrée dans l'emploi du temps */
+.emploi-du-temps-entry {
+    background-color: #f0f0f0;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+/* Style pour la date */
+.emploi-du-temps-date {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Style pour l'heure */
+.emploi-du-temps-heure {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+/* Style pour la matière ou la classe */
+.emploi-du-temps-details {
+    font-size: 1em;
+}
+
+/* Styles pour le pied de page */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+body {
+    margin-bottom: 150px; /* Ajustez cette valeur selon vos besoins */
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}

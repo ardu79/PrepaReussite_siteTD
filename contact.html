@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactez-nous</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Contactez-nous</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="td.html">Liste des TD</a></li>
+                <li><a href="about.html">À Propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="contact-form">
+        <!-- Formulaire de contact -->
+        <form action="traitement_contact.php" method="post">
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required>
+
+            <label for="email">E-mail :</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <!-- Champ pour le numéro de téléphone -->
+            <label for="telephone">Numéro de téléphone :</label>
+            <input type="tel" id="telephone" name="telephone" required>
+
+            <!-- Bouton pour envoyer par WhatsApp -->
+            <button type="button" onclick="envoyerWhatsApp()">Envoyer par WhatsApp</button>
+        </form>
+
+        <!-- Script JavaScript -->
+        <script>
+            function envoyerWhatsApp() {
+                // Récupérer les valeurs du formulaire
+                var nom = document.getElementById("nom").value;
+                var email = document.getElementById("email").value;
+                var message = document.getElementById("message").value;
+                var telephone = document.getElementById("telephone").value;
+
+                // Créer le message WhatsApp pré-rempli
+                var messageWhatsApp = "Nom : " + nom + "%0A";
+                messageWhatsApp += "E-mail : " + email + "%0A";
+                messageWhatsApp += "Message : " + message + "%0A";
+                messageWhatsApp += "Téléphone : " + telephone;
+
+                // Créer le lien WhatsApp avec le message pré-rempli
+                var lienWhatsApp = "https://wa.me/22879721482?text=" + encodeURIComponent(messageWhatsApp);
+
+                // Rediriger l'utilisateur vers WhatsApp
+                window.location.href = lienWhatsApp;
+            }
+        </script>
+    </section>
+
+    <!-- Style CSS -->
+    <style>
+        /* Style pour le formulaire de contact */
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 16px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        button {
+            background-color: #27ae60; /* Nouvelle couleur pour le bouton d'envoi */
+            color: #fff;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #219d54; /* Couleur au survol */
+        }
+
+        /* Style pour les messages d'erreur ou de succès si nécessaire */
+        .message {
+            margin-top: 16px;
+            padding: 12px;
+            border-radius: 4px;
+        }
+
+        .success {
+            background-color: #2ecc71;
+            color: #fff;
+        }
+
+        .error {
+            background-color: #e74c3c;
+            color: #fff;
+        }
+    </style>
+    
+    <footer>
+        <p>&copy; 2024 PrépaRéussite</p>
+    </footer>
+</body>
+</html>
